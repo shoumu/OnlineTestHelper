@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Online Test Helper",
+  "description": "This extension can help to inject a webpage in the current webpage, to make this extension just for fun",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Online Test Helper"
+    // "default_popup": "popup.html"
+  },
+
+  "background": { 
+    "scripts": ["js/inject.js"] 
+  },
+
+  "permissions": [
+    "tabs", 
+    "activeTab",
+    "http://*/*", 
+    "https://*/*"
+  ],
+
+  "web_accessible_resources": ["html/work.html"]
+}
