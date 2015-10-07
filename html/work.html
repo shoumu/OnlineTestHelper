@@ -1,6 +1,50 @@
 <html>
-	<head>just a test</head>
-	<body>
-		<h1>just a test</h1>
-	</body>
+<head>
+	<title>OnlineTestHelper</title>
+	<link rel="stylesheet" type="text/css" href="../libs/semantic/semantic.min.css">
+	<script src="../libs/jquery-2.1.1.min.js"></script>
+	<script src="../libs/semantic/semantic.min.js"></script>
+	<script src="../js/work.js"></script>
+</head>
+<body>
+
+	<div class="paths example">
+		<div class="ui pointing secondary menu">
+			<a class="item active" data-tab="baidu">Baidu</a>
+			<a class="item" data-tab="codepad">codepad</a>
+			<div class="right menu">
+				<a class="item" id="new-tab">
+					<i class="add icon"></i> New Tab
+				</a>
+			</div>
+		</div>
+
+		<div class="ui tab segment active" data-tab="baidu">
+			<iframe id="iframe-baidu" src="https://www.baidu.com" frameborder="0" width="1300" height="650"></iframe>
+		</div>
+		<div class="ui tab segment" data-tab="codepad">
+			<iframe id="iframe-codepad" src="http://codepad.org/" frameborder="0" width="1300" height="650"></iframe>
+		</div>
+	</div>
+
+	<div class="ui small test modal">
+		<div class="header">
+			Add a new tab
+		</div>
+		<div class="content">
+			<input id="web-name" type="text">
+			<input id="web-url" type="text">
+		</div>
+		<div class="actions">
+			<div class="ui negative button">
+				No
+			</div>
+			<div class="ui positive right labeled icon button">
+				Yes
+				<i class="checkmark icon"></i>
+			</div>
+		</div>
+	</div>
+
+</body>
 </html>
